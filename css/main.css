@@ -8,7 +8,7 @@ h1 {
   font-size: 40px;
   color: steelblue;
 }
-/*Utilizamos un selector descendente (de etiqueta body, de clase .index y de etiqueta a) para estabelecer el tipo de letra, tamaño, color, margen, altura y decoración de texto de nuestros links en el index*/
+/*Utilizamos un selector descendente (combinación de selector de etiqueta body con selector de clase .index, y de etiqueta a) para estabelecer el tipo de letra, tamaño, color, margen, altura y decoración de texto de nuestros links en el index*/
 body.index a {
   font-family: sans-serif;
   font-size: 20px;
@@ -17,7 +17,7 @@ body.index a {
   line-height: 30px;
   text-decoration: none;
 }
-/*Utilizamos un selector descendente (de etiqueta body, de clase .index y la pseudo-clase a:hover para implementar el subrayado de los links cuando pasamos el cursor sobre ellos en nuestro index*/
+/*Utilizamos un selector descendente (combinación de selector de etiqueta body con selector de clase .index, y la pseudo-clase a:hover) para implementar el subrayado de los links cuando pasamos el cursor sobre ellos en nuestro index*/
 body.index a:hover {
   text-decoration: underline;
 }
@@ -240,23 +240,12 @@ footer.ex-i p {
     line-height: 6px;
     margin-left: 225px;
 }
-/*
-.bg-box {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #44accf;
-  margin: 0;
-}
-*/
-
+/*Utilizamos la combinación del selector de etiqueta body con el selector de clase .ex-j para establecer el color de fondo y margen de nuestro documento en el ejercicio J*/
 body.ex-j {
   background-color: #44accf;
   margin: 0;
 }
-
+/*Utilizamos el selector de clase .main-box para contener las cajas que formarán la estructura de nuestro documento. Le damos position relative y lo ubicamos al centro. Además, establecemos su ancho, color de fondo y relleno inferior*/
 .main-box {
   position: relative;
   margin-left: auto;
@@ -265,13 +254,13 @@ body.ex-j {
   background-color: white;
   padding-bottom: 60px;
 }
-
+/*Utilizamos la combinación del selector de etiqueta nav con el selector de clase .ex-j para establecer el ancho, la altura y color de fondo de nuestra barra de navegación*/
 nav.ex-j {
   height: 50px;
   width: 900px;
   background-color: #b7d84b;
 }
-
+/*Utilizamos un selector descendente (de etiqueta nav y a) para establecer el display de nuestros links en la barra de navegación a bloques y darles la propiedad float para ubicarlos a la izquierda ordenadamente. Además, establecemos su ancho; borde derecho; tipo, tamaño y color de letra; entre otros*/
 nav a {
   display: block;
   float: left;
@@ -285,11 +274,11 @@ nav a {
   color: white;
   border-right: 1px solid #91ab3b;
 }
-
+/*Utilizamos un selector descendente (de etiqueta nav y la pseudo-clase a:hover) para establecer el color de fondo de los bloques que contienen nuestros links cuando pasamos el cursor sobre ellos*/
 nav a:hover {
   background-color: #91ab3b;
 }
-
+/*Utilizamos la combinación del selector de etiqueta main con el selector de clase .ex-j para contener el contenido principal de nuestro documento (los párrafos). Le damos position relative y establecemos su relleno; y tipo, tamaño y altura de letra*/
 main.ex-j {
   position: relative;
   font-family: Helvetica, sans-serif;
@@ -299,7 +288,7 @@ main.ex-j {
   padding-right: 253px;
   padding-top: 20px;
 }
-
+/*Utilizamos la combinación del selector de etiqueta footer con el selector de clase .ex-j para definir nuestro pie de página y contener una línea con los derechos de autor del documento. Le damos position fixed para que se vea siempre fijo en la parte inferior del navegador. También, establecemos su ancho; relleno izquierdo; color de fondo; tipo, tamaño y altura de letra*/
 footer.ex-j {
   position: fixed;
   bottom: 0;
@@ -310,7 +299,7 @@ footer.ex-j {
   line-height: 18px;
   padding-left: 20px;
 }
-
+/*Utilizamos la combinación del selector de etiqueta aside con el selector de clase .ex-j para almacenar contenido adicional del documento que se verá a un lado del navegador. Le damos position absolute y lo ubicamos al lado derecho ocupando espacio dentro y fuera del main. Además, establecemos su borde superior; color de fondo; relleno izquierdo y derecho; color de texto; tipo, tamaño, y altura de letra*/
 aside.ex-j {
   position: absolute;
   top: 150px;
