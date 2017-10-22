@@ -1,14 +1,15 @@
+/*Utilizamos el selector universal para establecer que el tamaño de todas las cajas se mida según el valor de su width*/
 * {
   box-sizing: border-box;
 }
-
+/*Utilizamos el selector de etiqueta h1 ubicado en nuestro index para establecer su tipo de letra, tamaño y color de texto*/
 h1 {
   font-family: monospace;
   font-size: 40px;
   color: steelblue;
 }
-
-a {
+/*Utilizamos un selector descendente (de etiqueta body, de clase .index y de etiqueta a) para estabelecer el tipo de letra, tamaño, color, margen, altura y decoración de texto de nuestros links en el index*/
+body.index a {
   font-family: sans-serif;
   font-size: 20px;
   color: steelblue;
@@ -16,25 +17,312 @@ a {
   line-height: 30px;
   text-decoration: none;
 }
-
-a:hover {
+/*Utilizamos un selector descendente (de etiqueta body, de clase .index y la pseudo-clase a:hover para implementar el subrayado de los links cuando pasamos el cursor sobre ellos en nuestro index*/
+body.index a:hover {
   text-decoration: underline;
 }
 
+/*Cajas de Ejercicio A*/
 .boxA1 {
   width: 200px;
   height: 200px;
   background-color: #ee3e64;
+  position: static;
 }
 
 .boxA2 {
   width: 200px;
   height: 200px;
   background-color: #44accf;
+  position: static;
 }
 
 .boxA3 {
   width: 200px;
   height: 200px;
   background-color: #b7d84b;
+  position: static;
+}
+
+/*Cajas de Ejercicio B*/
+.boxB1 {
+  width: 200px;
+  height: 200px;
+  background-color: #ee3e64;
+  position: relative;
+}
+
+.boxB2 {
+  width: 200px;
+  height: 200px;
+  background-color: #44accf;
+  position: relative;
+}
+
+.boxB3 {
+  width: 200px;
+  height: 200px;
+  background-color: #b7d84b;
+  position: relative;
+}
+
+/*Cajas de Ejercicio C*/
+.boxC1 {
+  width: 200px;
+  height: 200px;
+  background-color: #ee3e64;
+  position: relative;
+}
+
+.boxC2 {
+  width: 200px;
+  height: 200px;
+  background-color: #44accf;
+  position: relative;
+  left: 200px;
+}
+
+.boxC3 {
+  width: 200px;
+  height: 200px;
+  background-color: #b7d84b;
+  position: relative;
+}
+
+/*Cajas de Ejercicio D*/
+.boxD1 {
+  width: 200px;
+  height: 200px;
+  background-color: #ee3e64;
+  position: relative;
+}
+
+.boxD2 {
+  width: 200px;
+  height: 200px;
+  background-color: #44accf;
+  position: relative;
+  left: 200px;
+}
+
+.boxD3 {
+  width: 200px;
+  height: 200px;
+  background-color: #b7d84b;
+  position: relative;
+}
+
+/*Cajas de Ejercicio E*/
+.boxE1 {
+  width: 200px;
+  height: 200px;
+  background-color: #ee3e64;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.boxE2 {
+  width: 200px;
+  height: 200px;
+  background-color: #44accf;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.boxE3 {
+  width: 200px;
+  height: 200px;
+  background-color: #b7d84b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.boxE4 {
+  width: 200px;
+  height: 200px;
+  background-color: #ebde52;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*Cajas de Ejercicio F*/
+.orange {
+  width: 40px;
+  height: 40px;
+  background-color: #f95b34;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+/*Cajas de Ejercicio G*/
+.boxG1 {
+  background-color: #44accf;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.boxG2 {
+  background-color: #ff9c34;
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+/*Cajas de Ejercicio H*/
+.boxH1 {
+  background-color: #ee3e64;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 20%;
+}
+
+.boxH2 {
+  background-color: #b7d84b;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 80%;
+  right: 0;
+}
+
+/*Cajas de Ejercicio H2*/
+.boxH2a {
+  width: 200px;
+  height: 200px;
+  background-color: #ee3e64;
+}
+
+.boxH2b {
+  width: 200px;
+  height: 200px;
+  background-color: #44accf;
+  position: absolute;
+  left: 100px;
+}
+
+/*Cajas de Ejercicio H3*/
+.boxH3 {
+  width: 200px;
+  height: 200px;
+  background-color: #44accf;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+/*Utilizamos el selector de etiqueta p para establecer los márgenes de izquierda y derecha de nuestros párrafos en el ejercicio I*/
+main.ex-i {
+    margin-left: 217px;
+    margin-right: 217px;
+}
+/*Utilizamos el selector de etiqueta footer para establecer el color de fondo, y posición de nuestro pie de página en el ejercicio I*/
+footer.ex-i {
+  background-color: #f95b34;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/*Utilizamos un selector descendente para establecer la altura del texto y el margen izquierdo de los párrafos dentro de nuestro pie de páginaen el ejercicio I*/
+footer.ex-i p {
+    line-height: 6px;
+    margin-left: 225px;
+}
+/*
+.bg-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #44accf;
+  margin: 0;
+}
+*/
+
+body.ex-j {
+  background-color: #44accf;
+  margin: 0;
+}
+
+.main-box {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  background-color: white;
+  padding-bottom: 60px;
+}
+
+nav.ex-j {
+  height: 50px;
+  width: 900px;
+  background-color: #b7d84b;
+}
+
+nav a {
+  display: block;
+  float: left;
+  width: 7%;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  color: white;
+  border-right: 1px solid #91ab3b;
+}
+
+nav a:hover {
+  background-color: #91ab3b;
+}
+
+main.ex-j {
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 20px;
+  padding-right: 253px;
+  padding-top: 20px;
+}
+
+footer.ex-j {
+  position: fixed;
+  bottom: 0;
+  width: 900px;
+  background-color: #f36283;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 20px;
+}
+
+aside.ex-j {
+  position: absolute;
+  top: 150px;
+  left: 730px;
+  bottom: 100px;
+  width: 250px;
+  border-top: 5px solid #f95b34;
+  background-color: #fa8366;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
